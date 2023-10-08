@@ -1,0 +1,14 @@
+apps:
+  - name: krv-lms2-template
+    watch: true
+    instances: 2
+    exec_mode: cluster
+    env_production:
+      NODE_ENV: production
+      TYPEORM_USERNAME: krv_usr
+      TYPEORM_PASSWORD: tHUMVerILithMenE
+      TYPEORM_PORT: 5520
+      TYPEORM_DATABASE: krv_template
+      DATABASE_URL: postgresql://krv_usr:somepassword@192.168.234.20:5520/krv_template?sslmode=disable
+      SPACES_BUCKET: krvlearning-template
+      PORT: 8088

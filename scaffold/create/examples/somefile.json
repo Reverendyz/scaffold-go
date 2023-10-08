@@ -1,0 +1,11 @@
+{
+    "app": "somename",
+    "object": {
+        "key": "somefile"
+    },
+    "list": [
+        "value-1",
+        "value-2",
+        "value-3"
+    ]
+}

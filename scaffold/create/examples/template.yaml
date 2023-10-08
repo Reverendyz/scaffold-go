@@ -1,0 +1,15 @@
+apps:
+  - script: ./dist/main.js
+    name: krv-lms2-template # Comercial base
+    watch: true
+    instances: 2 # Change if you want to run more instances locally or in the server
+    exec_mode: cluster
+    env_production:
+      NODE_ENV: production
+      TYPEORM_USERNAME: krv_usr
+      TYPEORM_PASSWORD: tHUMVerILithMenE
+      TYPEORM_PORT: 5530
+      TYPEORM_DATABASE: krv_template
+      DATABASE_URL: postgresql://krv_usr:YI1gw6iVDwSD0Mku@192.168.234.20:5500/krv_template?sslmode=disable
+      SPACES_BUCKET: krvlearning-template
+      PORT: 8087
